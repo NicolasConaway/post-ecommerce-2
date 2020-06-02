@@ -7,10 +7,7 @@ class Donate extends React.Component {
     render(){
         return(
             <>
-                {/* <figure>
-                    <img src={cancerRibbonBanner} alt="Banner of the child cnacer ribbon" className="donate__banner" /> 
-                </figure> */}
-
+        
                 <h2 className="donate__title">Donate to help the children and families in need</h2>
 
                 <div className="forms__container">
@@ -37,7 +34,11 @@ class Donate extends React.Component {
 
                         <label htmlFor="donationAmount">Enter Donation Amount:</label>
                         <input name="Donation amount" type="text" id="donationAmount" required />
+                    </form>
+                </div>  
 
+                <div className="forms__container">
+                    <form method="GET">
                         <label>Payment Method:</label>
                         <input name="credit card number" type="text" placeholder="Credit card number:" required />
                         <input name="credit card expiration date" type="text" placeholder="Expiration date:" required />
@@ -50,10 +51,12 @@ class Donate extends React.Component {
                         <input name="City" type="text" placeholder="City:" required />
                         <input name="State" type="text" placeholder="State:" required />
 
-
-                        <button name="submit button" type="submit" className="donate__button">Submit</button>
+                        <div className="donate__button__container">
+                            <button name="submit button" type="submit" className="donate__button">Submit</button>
+                        </div>
                     </form>
-                </div>
+                </div>    
+                
             </>
         )
     }

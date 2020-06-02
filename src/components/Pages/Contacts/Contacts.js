@@ -40,7 +40,9 @@ class Contacts extends React.Component {
                         <label for="comments">Comments:</label>
                         <textarea name="Comment section" id="comments" required></textarea>
 
-                        <button name="submit button" type="submit" className="contact__button">Submit</button>
+                        <div className="contact__button__container">
+                            <button name="submit button" type="submit" className="contact__button">Submit</button>
+                        </div>
                     </form>
                 </div>
 

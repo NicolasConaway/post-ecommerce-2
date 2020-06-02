@@ -97,6 +97,9 @@ class Products extends React.Component {
                 <div className="filter__container">
                     <button className="filter__button" onClick={this.toggleTagMed}>Medical</button>
                     <button className="filter__button" onClick={this.toggleTagBaby}>Baby</button>
+
+                    <div className="filter__break"></div>
+
                     <button className="filter__button" onClick={this.toggleSortPriceHigh}>Price High</button>
                     <button className="filter__button" onClick={this.toggleSortPriceLow}>Price Low</button>
                 </div>

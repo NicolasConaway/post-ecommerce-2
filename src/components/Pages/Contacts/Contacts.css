@@ -49,7 +49,7 @@ iframe{
 .form__container{
     margin: 5% 10% 5% 10%;
     background-color: rgb(238, 78, 78);
-    padding: 2%;
+    padding: 2% 3%;
     border-radius: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -66,6 +66,10 @@ input[type=text], textarea{
 textarea{
     height: 150px;
 }
+.contact__button__container {
+    width: 100%;
+    text-align: center;
+}
 .contact__button{
     background-color: rgb(245, 223, 190);
     padding: 12px 20px;
@@ -79,9 +83,29 @@ textarea{
     border-radius: 10px;
 }
 
-@media (max-width: 792px){
-    .contact__container{
+@media (max-width: 1050px) {
+    .contact__title{
+        margin-top: 14%;
+    }
+    .contact__info {
+        margin-right: 3%;
+    }
+
+}
+@media (max-width: 750px) {
+    .contact__title {
+        margin-top: 28%;
+    }
+    .contact__container {
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .contact__info {
+        margin-bottom: 6%;
+    }
+    .form__container {
+        padding: 2% 6%;
+        border-radius: 35px;
+        margin-bottom: 8%;
     }
 }
