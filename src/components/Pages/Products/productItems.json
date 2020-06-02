@@ -1,0 +1,87 @@
+
+[
+    {
+        "title":"Medical Masks (50pcs)",
+        "image":"./images/masks.webp",
+        "price":"12.00",
+        "id": 1,
+        "description":"3-ply disposable masks, made specially to contain the germs from a cough or a sneeze. They also protect the wearer from breathing in any harmful germs or chemical that would cause more issues for them."
+    },
+    {
+        "title":"Disposable Gloves (100pcs)",
+        "image":"./images/gloves.jpg",
+        "price":"13.33",
+        "id": 1,
+        "description":"Whether you are in medical care, law enforcement, first response aid, a physician, a tattoo artist, a hair specialist, a painter, cleaner, caterer- you can get our box and be set for a while to come, with the best disposable gloves."
+    },
+    {
+        "title":"Injection Needles (50pcs)",
+        "image":"./images/injectionNeedle.webp",
+        "price":"12.66",
+        "id": 1,
+        "description":"50 pack of sterial 3ccs needles. Used with special orders from your child's doctor in case if you have to give your child medicine while you're at home."
+    },
+    {
+        "title":"Baby Diappers (32 count)",
+        "image":"./images/diappers.png",
+        "price":"15.00",
+        "id": 2,
+        "description":"Welcome to drier nights and Sesame Street dreams! Pampers Baby-Dry diapers are 3x drier* and feature our exclusive Air-Dry Channels for up to 12 hours of overnight dryness."
+    },
+    {
+        "title":"Baby Food (12-pack)",
+        "image":"./images/babyFood.jpg",
+        "price":"73.33",
+        "id": 2,
+        "description":"Kate Farms Pediatric Peptide 1.5 is a complete nutrition specialty formula designed for kids ages 1 to 13 years with difficulty digesting. Available in tasty vanilla, the formula can be enjoyed for added nutrition and may also be used for tube feeding."
+    },
+    {
+        "title":"Alcohol Pads (400pcs)",
+        "image":"./images/alcoholPads.jpg",
+        "price":"13.33",
+        "id": 1,
+        "description":"Each convenient, single-use pad delivers Glycolic acid (5%) to remove dead skin cells, exfoliate away the rough, dull layers of skin, and reveal the new, smoother skin below."
+    },
+    {
+        "title":"Baby Wipes",
+        "image":"./images/babyWipes.jpg",
+        "price":"13.33",
+        "id": 2,
+        "description":"These wipes are made with pharmaceutical-grade purified water, aloe and vitamin E for clean and gentle wipes. Each one is strong, soft, large, and textured for cleaning hands, face, and diaper area."
+    },
+    {
+        "title":"Bandages (12-pack)",
+        "image":"./images/bandages.jpg",
+        "price":"12.00",
+        "id": 1,
+        "description":"A 12 pack of white medical bandages for wraping off any wounds or covering up any cords and wires you may have to carry around. These bandages are made of stretchy gauze for a nice taught and comfortable fit around the customers' skin."
+    },
+    {
+        "title":"Nausea Medicine",
+        "image":"./images/nauseaMeds.jpeg",
+        "price":"4.66",
+        "id": 1,
+        "description":"Don’t let an upset stomach ruin your child’s day. Trust pediatrician recommended Nauzene Kids for fast, effective relief of nausea from “stomach flu”, upset stomach and “car sickness”."
+    },
+    {
+        "title":"Beanies for Children",
+        "image":"./images/beanies.jpg",
+        "price":"10.66",
+        "id": 2,
+        "description":"A child's health is our main concern. A child's comfort is a close second to that. With these beanies your child can keep warm on their head, and stay feeling comfortable and stylish."
+    },
+    {
+        "title":"First Aid Kit",
+        "image":"./images/firstAidKit.jpeg",
+        "price":"11.33",
+        "id": 1,
+        "description":"The First Aid Only 299 Piece All-Purpose First Aid Kit will have you prepared for any potential emergency at home, in the office or on the go. The essential first aid supplies are ideal to treat pain and swelling, as well as cuts, scrapes, and burns."
+    },
+    {
+        "title":"Central Line Changing Kit",
+        "image":"./images/centralLineKit.jpg",
+        "price":"5.00",
+        "id": 1,
+        "description":"Kit includes: one 3/4 x 18 Medfix transparent tape, one pack alcohol swabsticks, one sureprep skin wipe, one blue face mask with earloops, one pair of medium Aloe touch Ultra latex-free gloves, one 2x2 6-ply gauze sponge..."
+    }
+]

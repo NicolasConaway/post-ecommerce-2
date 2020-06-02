@@ -1,0 +1,59 @@
+figure{
+    margin: 0;
+}
+
+/* Banner Image Styles */
+.donate__banner{
+    width: 100%;
+    /* margin-right: auto;
+    margin-left: auto;
+    margin-top: 6.5%;
+    display: block;
+    height: 200px;
+    width: 75%; */
+}
+
+/* Title Styles */
+.donate__title{
+    text-align: center;
+    margin-top: 8%;
+    font-size: 2.5rem;
+    text-decoration: underline dotted;
+}
+
+/* Form Styles */
+.forms__container{
+    margin: 5% 10% 5% 10%;
+    background-color: rgb(238, 78, 78);
+    padding: 2%;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+input[type=text], select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.donate__button{
+    background-color: rgb(245, 223, 190);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5%;
+}
+.donate__button:hover{
+    background-color: rgb(199, 180, 151);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+@media (max-width: 792px){
+    .donate__banner{
+        width: 100%;
+    }
+}

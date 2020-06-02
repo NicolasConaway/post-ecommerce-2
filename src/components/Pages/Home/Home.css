@@ -1,0 +1,170 @@
+/* Home Slider Styles */
+.home__slider {
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    animation: slide 15s infinite;
+}
+.home__slider p {
+    position: absolute;
+    font-size: 4rem;
+    text-shadow: -1.5px -1.5px 0 rgba(255, 255, 255, 0.582), 1.5px -1.5px 0 rgba(255, 255, 255, 0.582), -1.5px 1.5px 0 rgba(255, 255, 255, 0.582), 1.5px 1.5px 0 rgba(255, 255, 255, 0.582);
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* Our Goal Styles */
+.our__goal {
+    margin: 0 5% 5% 5%;
+  }
+  .our__goal h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: dotted underline;
+  }
+  .goal__content {
+    display: flex;
+    align-items: center;
+  }
+  .goal__content img {
+    width: 30%;
+    margin-right: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5%;
+  }
+  .our__goal p {
+    font-size: 1.5rem;
+    text-indent: 5%;
+  }
+
+  /* Home Links Styles */
+  .home__links {
+    display: flex;
+    justify-content: center;
+    border-top: dotted;
+    margin: 5%;
+  }
+  .home__links img {
+    width: 40%;
+    margin: 3% 10% 0 28%;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: rgb(228, 121, 121);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .home__links img:hover{
+    background-color: rgb(240, 92, 92);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4)
+  }
+
+  /* PSA Video Styles */
+.psaVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+.psaVideo h2 {
+  text-decoration: underline dotted;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.psaVideo iframe{
+    height: 50vh;
+    width: 50vw;
+    border: 0;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@keyframes slide {
+  0%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/FightKid_3.jpg);
+  }
+  25%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/FightKid_3.jpg);
+  }
+  25.01%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/child_1280p.jpg);
+  }
+  50%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/child_1280p.jpg);
+  }
+  50.01%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/ChildhoodCancer.jpg);
+  }
+  75%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/ChildhoodCancer.jpg);
+  }
+  75.01%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/1209_cancer_cog-1000x547.jpg);
+  }
+  100%{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./images/1209_cancer_cog-1000x547.jpg);
+  }
+}
+
+@media (max-width: 1050px) {
+  .home__slider p {
+    font-size: 4rem;
+    left: 20%;
+    transform: translate(-10%, -50%);
+  }
+  .our__goal{
+    margin: 0 7% 5% 7%;
+  }
+  .goal__content {
+    display: inline-block;
+  }
+  .goal__content img {
+    width: 45%;
+    float: left;
+  }
+  .goal__content p {
+    font-size: 1.8rem;
+  }
+  .psaVideo iframe {
+    height: 30vh;
+    width: 70vw;
+  }
+  .home__links img {
+    width: 50%;
+    margin: 9% 10% 0 22%;
+  }
+}
+
+@media (max-width: 750px) {
+  .home__slider p {
+    font-size: 3rem;
+    left: 15%;
+    transform: translate(-10%, -50%);
+  }
+  .our__goal{
+    margin: 0 5% 5% 5%;
+  }
+  .goal__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .goal__content img {
+    width: 90%;
+    margin: 0;
+  }
+  .goal__content p {
+    font-size: 1.3rem;
+  }
+  .psaVideo iframe {
+    height: 30vh;
+    width: 90vw;
+    margin-bottom: 3%;
+  }
+  .home__links img {
+    width: 58%;
+    margin: 9% 10% 0 20%;
+  }
+}

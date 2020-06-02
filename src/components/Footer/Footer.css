@@ -1,0 +1,45 @@
+.footer{
+    background-color: rgb(238, 78, 78);
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.89);
+    border-radius: 25% 25% 0 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.socialMedia{
+    display: inline-block;
+    text-align: center;
+}
+.socialMedia img{
+    width: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    padding: 2px;
+}
+.socialMedia img:hover {
+    background-color: rgb(245, 223, 190);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+.footer p{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+@media (max-width: 1050px){
+    .socialMedia img{
+        width: 6%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+@media (max-width: 750px){
+    .socialMedia img{
+        width: 7%;
+    }
+}
