@@ -1,6 +1,6 @@
 import React from 'react';
 import './Products.css'
-import productItems from './productItems.json'
+import productItems from '../../Data/productItems.json'
 import ProductsList from './ProductsList.js'
 
 class Products extends React.Component {
