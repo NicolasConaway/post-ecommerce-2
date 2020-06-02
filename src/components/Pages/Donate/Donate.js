@@ -1,6 +1,5 @@
 import React from 'react';
 import './Donate.css'
-import cancerRibbonBanner from './images/cancerRibbonBanner.png'
 
 class Donate extends React.Component {
 

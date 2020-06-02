@@ -1,7 +1,64 @@
 import React from 'react';
 import './Contacts.css'
 
+const originalState = {
+    name: "",
+    email: "",
+    phone: "",
+    comments: "",
+    nameError: "",
+    emailError: "",
+    phoneError: "",
+    commentsError: ""
+}
+
 class Contacts extends React.Component {
+
+    state = originalState;
+
+    handleChange = event => {
+        const isCheckbox = event.target.type === "checkbox" ;
+        this.setState({
+            [event.target.name]: isCheckbox
+            ? event.target.checked
+            : event.target.value
+        });
+    };
+
+     validate = () => {
+        let nameError = "";
+        let emailError = "";
+        let phoneError = "";
+        let commentsError = "";
+
+        if (!this.state.name) {
+            nameError = 'Name must be included!'
+        }
+        if (!this.state.email.includes('@')) {
+            emailError = 'Invalid email!';
+        }
+        if (!this.state.phone) {
+            phoneError = 'Invalid phone number!'
+        }
+        if (!this.state.comments) {
+            commentsError = 'Must include a message!'
+        }
+        
+        if (emailError || nameError || phoneError || commentsError) {
+            this.setState({emailError, nameError, phoneError, commentsError});
+            return false;
+        }
+
+        return true;
+    };
+
+    handleSubmit = event => {
+        event.preventDefault();
+        const isValid = this.validate();
+        if (isValid) {
+            this.setState(originalState);
+        }
+    }
 
     render(){
         return(
@@ -27,21 +84,41 @@ class Contacts extends React.Component {
                 </div>
 
                 <div className="form__container">
-                    <form method="GET"> 
+                    <form onSubmit={this.handleSubmit}> 
                         <label for="name">Full Name:</label>
-                        <input name="Full Name" type="text" id="name" required />
+                        <input 
+                        name="name" 
+                        value={this.state.name}
+                        onChange={this.handleChange} 
+                        id="name"/>
+                        <div className="errorMessage">{this.state.nameError}</div>
 
                         <label for="email">Email:</label>
-                        <input name="Email Address" type="text" id="email" required />
+                        <input 
+                        name="email" 
+                        value={this.state.email}
+                        onChange={this.handleChange}
+                        id="email"/>
+                        <div className="errorMessage">{this.state.emailError}</div>
 
-                        <label for="phoneNum">Cell Phone:</label>
-                        <input name="Cell Phone Number" type="text" id="phoneNum" required />
+                        <label for="phone">Cell Phone:</label>
+                        <input 
+                        name="phone" 
+                        value={this.state.phone}
+                        onChange={this.handleChange} 
+                        id="phone"/>
+                        <div className="errorMessage">{this.state.phoneError}</div>
 
                         <label for="comments">Comments:</label>
-                        <textarea name="Comment section" id="comments" required></textarea>
+                        <textarea 
+                        name="comments"
+                        value={this.state.comments} 
+                        onChange={this.handleChange}
+                        id="comments"></textarea>
+                        <div className="errorMessage">{this.state.commentsError}</div>
 
                         <div className="contact__button__container">
-                            <button name="submit button" type="submit" className="contact__button">Submit</button>
+                            <button type="submit" className="contact__button">Submit</button>
                         </div>
                     </form>
                 </div>

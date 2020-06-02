@@ -53,15 +53,19 @@ iframe{
     border-radius: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-input[type=text], textarea{
+input, textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
+}
+.errorMessage{
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    color: rgb(245, 223, 190);
 }
 textarea{
     height: 150px;
