@@ -1,11 +1,11 @@
 import React from 'react';
 import './Products.css'
 import productItems from '../../Data/productItems.json'
-import ProductsList from './ProductsList.js'
+/* import ProductsList from './ProductsList.js' */
 
 class Products extends React.Component {
 
-    constructor(props){
+    /* constructor(props){
         super(props)
         this.toggleTagMed = this.toggleTagMed.bind(this)
         this.toggleTagBaby = this.toggleTagBaby.bind(this)
@@ -16,10 +16,10 @@ class Products extends React.Component {
             priceOrder: true,
             tagOrder: true
         }
-    }
+    } */
 
     /* Sort By Price Low Button */
-    sortByPriceLow(){
+    /* sortByPriceLow(){
         const {postList} = this.state
         let newPostList = postList
         if (this.state.priceOrder){
@@ -33,9 +33,9 @@ class Products extends React.Component {
     toggleSortPriceLow (event) {
         this.sortByPriceLow()
     }
-
+ */
     /* Sort By Price High Button */
-    sortByPriceHigh(){
+    /* sortByPriceHigh(){
         const {postList} = this.state
         let newPostList = postList
         if (this.state.priceOrder){
@@ -49,9 +49,9 @@ class Products extends React.Component {
     toggleSortPriceHigh (event) {
         this.sortByPriceHigh()
     }
-
+ */
     /* Medical Button Functionality */
-    sortByTagMed(){
+   /*  sortByTagMed(){
         const {postList} = this.state
         let newPostList = postList
         if (this.state.tagOrder){
@@ -64,10 +64,10 @@ class Products extends React.Component {
     }
     toggleTagMed (event) {
         this.sortByTagMed()
-    }
+    } */
 
     /* Baby Button Functionality */
-    sortByTagBaby(){
+    /* sortByTagBaby(){
         const {postList} = this.state
         let newPostList = postList
         if (this.state.tagOrder){
@@ -92,10 +92,10 @@ class Products extends React.Component {
 
     componentDidMount() {
         this.pleaseFix()
-    }
+    } */
  
     render(){
-        const {postList} = this.state
+        /* const {postList} = this.state */
         return(
             <>
                 <div className="filter__container">
@@ -109,10 +109,17 @@ class Products extends React.Component {
                 </div>
                 <div className="products__section">
                     {
-                        postList.map((stock, i) => {
-                            return(<ProductsList 
-                                post={stock} 
-                                key={`post-list-key ${i}`} />)
+                        productItems.map((stock, i) => {
+                            return(
+                                <div className="products__container">
+                                    <div className="products__list">
+                                        <img src={stock.image} alt={stock.title} />
+                                        <h2>{stock.title}</h2>
+                                        <p className="price">Price: ${stock.price}</p>
+                                        <p className="desc">{stock.description}</p>
+                                    </div>          
+                                </div>
+                            )
                         })
                     }   
                 </div>
