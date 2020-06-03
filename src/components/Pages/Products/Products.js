@@ -82,12 +82,16 @@ class Products extends React.Component {
         this.sortByTagBaby()
     }
 
-    componentDidMount() {
+    pleaseFix(){
         this.setState({
             postList: productItems,
             priceOrder: true,
             tagOrder: true
         })
+    }
+
+    componentDidMount() {
+        this.pleaseFix()
     }
  
     render(){
