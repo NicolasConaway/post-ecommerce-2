@@ -43,8 +43,7 @@
     border: 3px solid rgb(238, 78, 78);
     border-radius: 8px;
     padding-top: 5px;
-    background-color: white;
-    opacity: 95%;
+    background-color: rgb(255, 255, 255);
 }
 .products__container:visited{
     color: black;
@@ -60,7 +59,6 @@
     width: 50%;
     margin-left: auto;
     border-radius: 5%;
-    opacity: 95%;
 }
 .products__list h2{
     font-weight: lighter;
