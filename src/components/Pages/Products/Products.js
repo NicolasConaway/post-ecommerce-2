@@ -12,7 +12,7 @@ class Products extends React.Component {
         this.toggleSortPriceLow = this.toggleSortPriceLow.bind(this)
         this.toggleSortPriceHigh = this.toggleSortPriceHigh.bind(this)
         this.state = {
-            postList: [],
+            postList: productItems,
             priceOrder: true,
             tagOrder: true
         }
